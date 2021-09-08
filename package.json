@@ -9,6 +9,16 @@
         "stimulus": "^2.0.0",
         "webpack-notifier": "^1.6.0"
     },
+    
+    "watch": {
+        "build": {
+          "patterns": [
+            "src"
+          ],
+          "extensions": "js,jsx"
+        }
+      },
+
     "license": "UNLICENSED",
     "private": true,
     "scripts": {
@@ -16,5 +26,13 @@
         "dev": "encore dev",
         "watch": "encore dev --watch",
         "build": "encore production --progress"
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.10.1",
+        "autoprefixer": "^10.3.4",
+        "bootstrap": "^5.1.1",
+        "jquery": "^3.6.0",
+        "npm-watch": "^0.11.0",
+        "postcss-loader": "^6.1.1"
     }
 }
