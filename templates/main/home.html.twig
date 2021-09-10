@@ -1,42 +1,64 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MainController!{% endblock %}
-
 {% block body %}
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-        </ul>
-        <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-        </div>
-    </div>
-    </nav>
+
+	<!-- Header -->
+	
+
+      <section class="content-section" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                   {# <h2 class="text-secondary mt-5 mb-5">Bienvenue!</h2> #}
+                </div>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1">La BD</div>
+                                    <p class="mb-0">Princesse grognon a enfin sa propre petite BD! C'est pas chouette ça?</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{{ asset('build/mac.jpg') }}" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1">Goodies</div>
+                                    <p class="mb-0">Mugs, porte-clés, badges, illustrations. Tu peux commencer ta collection!</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{{ asset('build/mac.jpg') }}" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1">L'artiste</div>
+                                    <p class="mb-0">Viens voir les autres projets de la créatrice de Princesse grognon/p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{{ asset('build/mac.jpg') }}" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1">Contact</div>
+                                    <p class="mb-0">Tu peux laisser un petit mot doux ou une requête à cet endroit</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{{ asset('build/mac.jpg') }}" alt="..." />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 {% endblock %}
+
+{#<img class="img-fluid" src="{{ asset('build/user-1.jpg') }}" alt="..." />#}
