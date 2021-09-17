@@ -17,4 +17,14 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+
+     /**
+     * @Route("/bd", name="main_bd")
+     */
+    public function bd(): Response
+    {
+        return $this->render('main/bd.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
 }
