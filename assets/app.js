@@ -10,6 +10,6 @@
 
 require('bootstrap');
 import './styles/app.scss';
+import './styles/scripts.js';
 // You can specify which plugins you need
 import { Tooltip, Toast, Popover } from 'bootstrap';
-
