@@ -1,4 +1,4 @@
-# monSiteB
+# PrincesseGrognon
 
 Projet personnel de création d'un site promotionnel sur la sortie d'une BD "Princesse Grognon".
 Les technos utilisées sont PHP 7.3.21, Symfony 4, Bootstrap 5.1. Utilisation de Webpack.
